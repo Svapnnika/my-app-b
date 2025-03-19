@@ -1,0 +1,20 @@
+
+.App-Products-Row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.App-Products-Box{
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 5px ;
+    width: 300px;
+    background-color: rgb(151, 194, 223);
+}
+.App-Products-Row button{
+    background-color: rgb(21, 101, 155);
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+}

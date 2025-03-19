@@ -1,0 +1,14 @@
+
+.App-Header-Row{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(21, 101, 155);
+}
+.App-Header-Row button{
+    background-color: rgb(21, 101, 155);
+    height: 40px;
+    width: 80px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
