@@ -17,4 +17,8 @@
     border: 2px solid black;
     border-radius: 5px;
     height: 30px;
+    cursor: pointer;
+}
+.App-Products-Row button:hover{
+    background-color: rgb(181, 193, 204);
 }

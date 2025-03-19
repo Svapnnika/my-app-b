@@ -1,9 +1,14 @@
 import "./Header.css";
+import { Link } from "react-router-dom"
 export default function Header() {
   return (
     <div className="App-Header-Row">
-      <h1>My React Store</h1>
-      <button>Menu</button>
+      <div>My React Store</div>
+      <div>
+        <Link to="home">Home</Link>
+        <Link to="cart">Cart</Link>
+        <Link to="login">Login</Link>
+      </div>
     </div>
   );
 }

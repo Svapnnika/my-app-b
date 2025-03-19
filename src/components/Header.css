@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(21, 101, 155);
+    padding: 10px;
 }
 .App-Header-Row button{
     background-color: rgb(21, 101, 155);
@@ -11,4 +12,8 @@
     margin: 20px;
     border: 2px solid black;
     border-radius: 5px;
+    cursor: pointer;
+}
+.App-Header-Row button:hover{
+    background-color: rgb(143, 156, 169);
 }
