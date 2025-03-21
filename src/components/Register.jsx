@@ -7,18 +7,23 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const handleSubmit = () => {
-    const newDetails = {
+    const newDetail = {
       name: name,
       email: email,
       password: password
     };
-    setDetails([...details, newDetails]);
+    const userExists = details.some(detail => detail.name === newDetail.name || detail.email === newDetail.email);
+    if (userExists) {
+    alert("User already exists!");
+    } else {
+    setDetails([...details, newDetail]);
     setName("");
     setEmail("");
     setPassword("");
   }
+  }
   const handleDelete = (index) => {
-     setDetails(details.filter((_, i) => i !== index));
+     setDetails(details.filter((element, i) => i !== index));
   }
   return (
     <div className='container'>
