@@ -17,3 +17,7 @@
 .App-Header-Row button:hover{
     background-color: rgb(143, 156, 169);
 }
+.App-Header-Row .App-Header-Links{
+    display: flex;
+    gap: 10px;
+}

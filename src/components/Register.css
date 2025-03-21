@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #a2cae4;
+    box-shadow: 0 0 10px rgba(23, 89, 143, 0.1);
+    margin: 0 auto;
+}
+table, th, td {
+    border: 1px solid rgb(20, 1, 1);
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #2d93d2;
+}
