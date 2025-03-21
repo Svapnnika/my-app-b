@@ -17,7 +17,9 @@ export default function Register() {
     setEmail("");
     setPassword("");
   }
-  
+  const handleDelete = (index) => {
+     setDetails(details.filter((_, i) => i !== index));
+  }
   return (
     <div className='container'>
       <div>
@@ -53,6 +55,7 @@ export default function Register() {
                 <th>Name</th>
                 <th>Email</th>
                 <th>Password</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -62,6 +65,7 @@ export default function Register() {
                       <td>{detail.name}</td>
                       <td>{detail.email}</td>
                       <td>{detail.password}</td>
+                      <td><button onClick={() => handleDelete(index)}>Delete</button></td>
                   </tr>
               ))}
             </tbody>
