@@ -1,0 +1,28 @@
+
+.App-Products-Row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.App-Products-Box{
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 5px ;
+    width: 300px;
+    background-color: rgb(140, 142, 143);
+}
+.App-Products-Row button{
+    background-color: rgb(130, 136, 139);
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+}
+.App-Products-Row button:hover{
+    background-color: rgb(0, 3, 5);
+    color: white;
+}
+body{
+    background-color: black;
+}

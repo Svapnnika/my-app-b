@@ -1,0 +1,27 @@
+
+.App-Header-Row{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(125, 132, 137);
+    padding: 10px;
+}
+.App-Header-Row button{
+    background-color: rgb(3, 27, 44);
+    height: 40px;
+    width: 80px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.App-Header-Row button:hover{
+    background-color: rgb(143, 156, 169);
+}
+.App-Header-Row .App-Header-Links{
+    display: flex;
+    gap: 10px;
+}
+.cart-count {
+    color: rgb(1, 5, 10);
+    margin-left: 3px;
+}
