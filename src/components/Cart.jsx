@@ -44,7 +44,7 @@ export default function Cart() {
   }, [cart]);
 
   return (
-    <div>
+    <div  style={{ color: 'white', backgroundColor: 'black' }}>
       <h1>Cart</h1>
       {Object.keys(cart).length > 0 ? (
         <>

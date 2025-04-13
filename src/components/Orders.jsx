@@ -5,7 +5,7 @@ import { useContext } from "react";
 export default function Orders() {
   const { orders, cart, user } = useContext(appContext);
   return (
-    <div>
+    <div  style={{ color: 'white', backgroundColor: 'black' }}>
       <h3>Orders</h3>
       <ol>
         {orders.map(

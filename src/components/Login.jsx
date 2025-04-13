@@ -19,7 +19,7 @@ export default function Login() {
     }
   };
   return (
-    <div>
+    <div  style={{ color: 'white', backgroundColor: 'black' }}>
       <h2>Login Form</h2>
 
       <p>
