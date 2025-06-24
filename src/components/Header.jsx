@@ -17,7 +17,7 @@ export default function Header() {
       <div className="App-Header-Links">
         <Link to="home">Home</Link> |
         <Link to={"/cart"}>Cart({items.length})</Link>-
-        <Link to={"/orders"}>Orders({myOrder.length})</Link> |
+        <Link to={"/order"}>Orders({myOrder.length})</Link> |
         {user.email === "" || (!user.email) ? (
           <Link to={"/login"}>Login</Link>
         ) : (

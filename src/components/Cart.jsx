@@ -28,14 +28,14 @@ export default function Cart() {
       ...orders,
       {
         email: user.email,
-        orderDate: Date(),
+        orderDate: new Date().toISOString(),
         items: cart,
         status: "pending",
         total: orderValue,
       },
     ]);
     setCart({});
-    Navigate("/orders");
+    Navigate("/order");
   };
   useEffect(() => {
     setOrderValue(products.reduce((sum, value) => {
