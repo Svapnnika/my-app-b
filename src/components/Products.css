@@ -5,12 +5,32 @@
     flex-wrap: wrap;
 }
 .App-Products-Box{
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     border: 3px solid black;
     border-radius: 5px ;
     width: 300px;
     background-color: rgb(140, 142, 143);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.App-Products-Box:hover{
+    transform: scale(1.05);
+    background-color: rgb(160, 162, 163);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-color: rgb(50, 50, 50);
+}
+
+.App-Products-Box img{
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.App-Products-Box:hover img{
+    transform: scale(1.02);
 }
 .App-Products-Row button{
     background-color: rgb(130, 136, 139);
@@ -25,4 +45,20 @@
 }
 body{
     background-color: black;
+}
+.App-Products-Box h3{
+    transition: color 0.3 ease;
+    margin: 10px 0;
+}
+.App-Products-Box:hover h3{
+    color: rgb(63, 64, 65);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+}
+.App-Products-Box h4{
+    transition: color 0.3 ease;
+    margin: 10px 0;
+}
+.App-Products-Box:hover h4{
+    color: rgb(59, 62, 63);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
 }

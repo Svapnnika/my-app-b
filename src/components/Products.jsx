@@ -50,24 +50,27 @@ export default function Products() {
 
   return (
     <>
-      <h3>Hello {user.name}</h3>
+      <h3 color="white">Hello {user.name}</h3>
       
       {/* Search Bar Section */}
       <div style={{ 
         backgroundColor: '#f5f5f5', 
-        padding: '10px 15px', 
-        margin: '10px auto', 
-        borderRadius: '3px',
-        boxShadow: '0 1px 2px rgba(0,0,0,0.1)',
-        width: '320px',
-        maxWidth: '100%'
+        padding: '15px 20px', 
+        margin: '0', 
+        borderRadius: '0',
+        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        width: '120%',
+        boxSizing: 'border-box',
+        borderBottom: '1px solid #ddd'
       }}>
         <h5 style={{ color: '#333', marginBottom: '8px', fontSize: '14px' }}>Search Cars</h5>
         
         <div style={{ 
           display: 'flex', 
           flexDirection: 'column',
-          gap: '8px'
+          gap: '12px',
+          maxWidth: '1200px',
+          margin: '0 auto'
         }}>
           {/* Search by name/brand */}
           <div>
@@ -77,60 +80,60 @@ export default function Products() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               style={{
-                padding: '6px 8px',
-                borderRadius: '3px',
+                padding: '10px 15px',
+                borderRadius: '5px',
                 border: '1px solid #ddd',
                 width: '100%',
-                fontSize: '12px',
+                fontSize: '14px',
                 boxSizing: 'border-box'
               }}
             />
           </div>
 
           {/* Price range and Year filter row */}
-          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: '15px', alignItems: 'center', flexWrap: 'wrap' }}>
             {/* Price range */}
-            <div style={{ display: 'flex', gap: '3px', alignItems: 'center', flex: 1 }}>
-              <span style={{ color: '#333', fontSize: '11px' }}>Price:</span>
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flex: 1, minWidth: '200px' }}>
+              <span style={{ color: '#333', fontSize: '13px', fontWeight: 'bold' }}>Price:</span>
               <input
                 type="number"
                 placeholder="Min"
                 value={minPrice}
                 onChange={(e) => setMinPrice(e.target.value)}
                 style={{
-                  padding: '5px',
-                  borderRadius: '3px',
+                  padding: '8px',
+                  borderRadius: '4px',
                   border: '1px solid #ddd',
-                  width: '45px',
-                  fontSize: '11px'
+                  width: '80px',
+                  fontSize: '13px'
                 }}
               />
-              <span style={{ color: '#333', fontSize: '11px' }}>-</span>
+              <span style={{ color: '#333', fontSize: '13px' }}>-</span>
               <input
                 type="number"
                 placeholder="Max"
                 value={maxPrice}
                 onChange={(e) => setMaxPrice(e.target.value)}
                 style={{
-                  padding: '5px',
-                  borderRadius: '3px',
+                  padding: '8px',
+                  borderRadius: '4px',
                   border: '1px solid #ddd',
-                  width: '45px',
-                  fontSize: '11px'
+                  width: '80px',
+                  fontSize: '13px'
                 }}
               />
             </div>
 
             {/* Year filter */}
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 1, minWidth: '120px' }}>
               <select
                 value={selectedYear}
                 onChange={(e) => setSelectedYear(e.target.value)}
                 style={{
-                  padding: '5px',
-                  borderRadius: '3px',
+                  padding: '8px',
+                  borderRadius: '4px',
                   border: '1px solid #ddd',
-                  fontSize: '11px',
+                  fontSize: '13px',
                   width: '100%'
                 }}
               >
@@ -145,13 +148,14 @@ export default function Products() {
             <button
               onClick={clearFilters}
               style={{
-                padding: '5px 8px',
+                padding: '8px 15px',
                 backgroundColor: 'black',
                 color: 'white',
                 border: 'none',
-                borderRadius: '3px',
+                borderRadius: '4px',
                 cursor: 'pointer',
-                fontSize: '11px'
+                fontSize: '13px',
+                minWidth: '80px'
               }}
             >
               Clear
@@ -159,7 +163,7 @@ export default function Products() {
           </div>
         </div>
 
-        <div style={{ marginTop: '5px', color: '#666', fontSize: '11px' }}>
+        <div style={{ marginTop: '10px', color: '#666', fontSize: '13px', textAlign: 'center' }}>
           Showing {filteredProducts.length} of {products.length} cars
         </div>
       </div>
