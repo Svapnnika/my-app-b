@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Products from "./components/Products";
 import Orders from "./components/Orders";
+import CarDetails from "./components/CarDetails";
 import { createContext } from "react";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -36,6 +37,7 @@ function App(props) {
           <Route path="order" element={<Orders/>} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="car/:id" element={<CarDetails />} />
         </Routes>
         <Footer />
       </appContext.Provider>

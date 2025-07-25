@@ -1,0 +1,81 @@
+.car-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.car-details-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.car-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.car-info-section {
+  padding: 20px 0;
+}
+
+.car-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.detail-item {
+  font-size: 1.1rem;
+  color: #1d1c1c;
+}
+
+.detail-item strong {
+  color: #181818;
+}
+
+.description-section {
+  margin: 30px 0;
+}
+
+.cart-actions {
+  margin: 30px 0;
+}
+
+.additional-info {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.back-button:hover {
+  background-color: #5a6268 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .car-details-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .car-details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .car-details-container {
+    padding: 10px;
+  }
+  
+  .car-info-section h1 {
+    font-size: 2rem !important;
+  }
+}
