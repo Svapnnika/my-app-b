@@ -152,7 +152,7 @@ export default function Register() {
         </Link>
       </p>
       </div>
-      <div>
+      {/* <div>
         <h3>Users Registered</h3>
         <div>
           <table>
@@ -188,7 +188,7 @@ export default function Register() {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -14,7 +14,8 @@ function App(props) {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({});
   const [cart, setCart] = useState({});
-  const [orders, setOrders] = useState([])
+  const [orders, setOrders] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   const products = [
     { id: 1, name: "Mercedes-Benz", brand: "Mercedes-Benz", year: 2023, price: 50000, desc: "Luxury Mercedes-Benz sedan", imgUrl: "https://imgs.search.brave.com/VZSW97skwY_AWJG4fW8pUxZBnaGxAOZvY2ag0O49D1g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2E2LzUy/LzM1L2E2NTIzNWZk/MWZmNDgzMGQ5MDQy/MmI5Y2EzMTg2YjQ0/LmpwZw" },
     { id: 2, name: "Audi A7", brand: "Audi", year: 2022, price: 40000, desc: "Premium Audi sedan", imgUrl: "https://imgs.search.brave.com/9ZMvn8Z8e6LfslpyAyCuKgBPUHMGPGvrbF_B79i9Tq0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDE4MzEw/ODcuanBn" },
@@ -31,7 +32,7 @@ function App(props) {
   ];
   return (
     <BrowserRouter>
-      <appContext.Provider value={{ users, setUsers, user, setUser, products, cart, setCart, orders, setOrders }}>
+      <appContext.Provider value={{ users, setUsers, user, setUser, products, cart, setCart, orders, setOrders, searchTerm, setSearchTerm }}>
         <Header />
         <Routes>
           <Route index element={<Products />} />
