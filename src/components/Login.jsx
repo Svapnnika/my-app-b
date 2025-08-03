@@ -10,14 +10,11 @@ export default function Login() {
   const Navigate = useNavigate();
   const [msg, setMsg] = useState();
   const [isLoading, setIsLoading] = useState(false);
-
-  // Email validation function
   const isValidEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-  // Form validation function
   const validateForm = () => {
     if (!user.email || !user.password) {
       setMsg("Please fill in all fields");
@@ -38,17 +35,13 @@ export default function Login() {
   };
 
   const handleSubmit = () => {
-    // Clear previous messages
     setMsg("");
     
-    // Validate form
     if (!validateForm()) {
       return;
     }
 
     setIsLoading(true);
-    
-    // Simulate async operation (you can replace this with actual API call)
     setTimeout(() => {
       const found = users.find(
         (value) => value.email === user.email && value.password === user.password
